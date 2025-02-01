@@ -5,11 +5,11 @@ const Castcard = ({ cast }) => {
         className="mb-3 flex flex-col justify-center items-center"
         key={cast.id}
       >
-        <div className="imgDiv w-20 h-20 sm:w-36 sm:h-36 rounded-full overflow-hidden">
+        <div className="imgDiv w-16 h-16 sm:w-36 sm:h-36 rounded-full overflow-hidden">
           {cast?.profile_path ? (
             <img
               src={`https://image.tmdb.org/t/p/original${cast?.profile_path}`}
-              className="w-full h-full object-cover rounded-full hover:scale-125 transition-all duration-300 ease-in"
+              className="w-full h-full object-cover object-center rounded-full hover:scale-125 transition-all duration-300 ease-in"
               alt="cast image"
             />
           ) : (

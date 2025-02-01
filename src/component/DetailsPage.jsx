@@ -81,12 +81,14 @@ const DetailsPage = () => {
                     Image not found
                   </p>
                 )}
-                <button
-                  onClick={() => setPlayVideo(true)}
-                  className="w-fit sm:w-[300px] capitalize absolute mx-10 mb-10 bottom-0 bg-white px-4 py-2 text-black rounded-sm font-bold text-lg hover:bg-gradient-to-l from-red-400 to-orange-400 transition-all duration-300 ease-linear hover:scale-105"
-                >
-                  Play Now
-                </button>
+                <div className="bg-black/10 p-5 absolute mx-3 mb-3 sm:mx-10 sm:mb-10 bottom-0">
+                  <button
+                    onClick={() => setPlayVideo(true)}
+                    className="w-fit sm:w-[300px] capitalize  bg-white px-4 py-2 text-black rounded-sm font-bold text-lg hover:bg-gradient-to-l from-red-400 to-orange-400 transition-all duration-300 ease-linear hover:scale-105"
+                  >
+                    Play Now
+                  </button>
+                </div>
               </div>
 
               {/* Movie Details */}
