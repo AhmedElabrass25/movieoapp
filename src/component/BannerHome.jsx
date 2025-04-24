@@ -6,7 +6,7 @@ const BannerHome = ({ movie }) => {
       <div className="h-[100vh] w-full relative" key={movie.id}>
         <img
           className="w-full h-[100vh] object-cover"
-          src={`https://image.tmdb.org/t/p/original${movie?.backdrop_path}`}
+          src={`https://image.tmdb.org/t/p/w1280${movie?.backdrop_path}`}
           alt={movie?.title || "movies images"}
         />
         <div className="absolute bottom-5 left-5 p-5  drop-shadow-2xl shadow-2xl  bg-black/20">

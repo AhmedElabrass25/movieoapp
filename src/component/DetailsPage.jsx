@@ -70,7 +70,7 @@ const DetailsPage = () => {
               <div className="imgDiv w-full h-full rounded-sm overflow-hidden mb-7 relative">
                 {movieDetails?.backdrop_path || movieDetails?.poster_path ? (
                   <img
-                    src={`https://image.tmdb.org/t/p/original${
+                    src={`https://image.tmdb.org/t/p/w780${
                       movieDetails?.backdrop_path || movieDetails?.poster_path
                     }`}
                     className="w-full h-full object-cover rounded-sm hover:scale-125 transition-all duration-300 ease-in"

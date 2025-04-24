@@ -9,7 +9,7 @@ const MovieCard = ({ movie, mediaType }) => {
           <div className="imgDiv w-full h-80 rounded-sm relative overflow-hidden">
             {movie?.backdrop_path || movie?.poster_path ? (
               <img
-                src={`https://image.tmdb.org/t/p/original${
+                src={`https://image.tmdb.org/t/p/w500${
                   movie?.backdrop_path || movie?.poster_path
                 }`}
                 className="w-full h-full object-cover rounded-sm hover:scale-125 transition-all duration-300 ease-in"

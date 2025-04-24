@@ -8,7 +8,7 @@ const Castcard = ({ cast }) => {
         <div className="imgDiv w-16 h-16 sm:w-36 sm:h-36 rounded-full overflow-hidden">
           {cast?.profile_path ? (
             <img
-              src={`https://image.tmdb.org/t/p/original${cast?.profile_path}`}
+              src={`https://image.tmdb.org/t/p/w500${cast?.profile_path}`}
               className="w-full h-full object-cover object-center rounded-full hover:scale-125 transition-all duration-300 ease-in"
               alt="cast image"
             />
